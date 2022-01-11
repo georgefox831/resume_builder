@@ -6,5 +6,7 @@ class ApplicationController < ActionController::Base
     def about	
     end
     
+    def new
+    end
 end
 

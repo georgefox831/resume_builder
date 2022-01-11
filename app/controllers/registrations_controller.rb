@@ -7,7 +7,7 @@ class RegistrationsController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             session[:user_id] = @user.id
-            redirect_to home_index_path, notice: "Account successfully created"
+            redirect_to sign_up_path, notice: "Account successfully created"
             # redirect home_path to the static resume page
         else 
             render :new, status: :unprocessable_entity
