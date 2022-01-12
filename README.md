@@ -19,7 +19,7 @@ Complete the resume/ CV app using Ruby on Rails.
 - Day 5/ Day 6 - Finally started working on the project, the whole experience was very much exciting and i am glad i did not give up at any point of time. 
 
 
-Also if clicking on login button did not navigate you to resume plz go to https://ruchi-resume.herokuapp.com/home/about
+# Note: Also if clicking on login button did not navigate you to resume plz go to https://ruchi-resume.herokuapp.com/home/about
 
 
 <p align="center">
