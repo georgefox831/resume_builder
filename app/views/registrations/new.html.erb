@@ -1,6 +1,16 @@
-<h1> Sign Up </h1>
+<div class="container">
+  <h1> Sign Up </h1>
+</div>
+<br/>
+<br/>
 
-<%= form_with model: @user, url: sign_up_path do |form| %>
+<% if flash[:notice]%>
+  <div class="alert alert-warning" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<%= form_with model: @user, url: root_path do |form| %>
   <% if @user.errors.any? %>
     <div class="alert alert-danger">
       <% @user.errors.full_messages.each do |message| %>
@@ -27,4 +37,5 @@
 <div class="mb-3">
   <%= form.submit "Login", class: "btn btn-primary" %>
 </div>
+
 <% end %>

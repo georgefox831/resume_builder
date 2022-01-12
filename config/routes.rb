@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/about'
-  root "registrations#new"
+  # root "registrations#new"
+  # root to: 'home#index'
+  root to: 'registrations#new'
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
   delete "logout" , to: "sessions#destroy"
